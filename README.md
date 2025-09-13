@@ -7,6 +7,16 @@ A React + Supabase app to help manage tasks, routines, groups, and accessibility
 - Supabase CLI if you want to create migrations or functions
 
 ## 2) Seting up Supabase
+Install Supabase
+```zsh
+npm install @supabase/supabase-js
+```
+
+Install CLI of supabase
+```zsh
+npm install -g supabase
+```
+
 Create a supabase account and project http://supabase.com/
 
 Create a `.env.local` file in the project root with your Supabase credentials:
@@ -18,7 +28,7 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 And apply all migrations and deploy functions
 
 Supabase CLI:
-```bash
+```zsh
 # Run local stack if you use CLI
 supabase start
 
