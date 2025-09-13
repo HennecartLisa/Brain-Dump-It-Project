@@ -14,10 +14,11 @@ npm install @supabase/supabase-js
 
 Install CLI of supabase
 ```zsh
-npm install supabase --save-dev
+npm install supabase
 ```
+Install and Run [Docker](https://www.docker.com/) with elevated privileges
 
-Create a supabase account and project http://supabase.com/
+Create a [supabase](http://supabase.com/) account and project
 
 Create a `.env.local` file in the project root with your Supabase credentials:
 
@@ -30,13 +31,13 @@ And apply all migrations and deploy functions
 Supabase CLI:
 ```zsh
 # Run local stack if you use CLI
-supabase start
+npx supabase start
 
 # apply migrations
-supabase migration push
+npx supabase migration push
 
 # deploy functions (adjust function name)
-supabase functions deploy get-user-lists
+npx supabase functions deploy get-user-lists
 ```
 
 ## 3) Install & Run
@@ -49,7 +50,7 @@ Then open the printed local URL http://localhost:...
 
 
 ## 4) API Layer (Frontend)
-All frontend API calls are centralized in `src/api/supabaseApi.ts`. Each returns `{ data?, error? }`.
+All frontend API calls are centralised in `src/api/supabaseApi.ts`. Each returns `{ data?, error? }`.
 
 ### Lists
 - `getUserLists(): Promise<ApiResponse<List[]>>`
