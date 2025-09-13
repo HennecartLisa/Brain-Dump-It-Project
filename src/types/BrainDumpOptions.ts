@@ -1,0 +1,10 @@
+export const BRAIN_DUMP_OPTIONS = {
+  NEW_LIST: "NEW_LIST",
+  NEW_ROUTINE: "NEW_ROUTINE", 
+  NEW_TASK: "NEW_TASK",
+  NEW_TRACKER: "NEW_TRACKER",
+  NEW_PROJECT: "NEW_PROJECT",
+  NEW_TASK_ROUTINE: "NEW_TASK_ROUTINE",
+} as const;
+
+export type BrainDumpOption = typeof BRAIN_DUMP_OPTIONS[keyof typeof BRAIN_DUMP_OPTIONS]; 

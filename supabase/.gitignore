@@ -1,0 +1,11 @@
+.branches
+.temp
+.env.keys
+.env.local
+.env.*.local
+config.toml
+eslint.config.js
+.DS_Store
+.flowbite-react
+.vscode
+node_modules/*
