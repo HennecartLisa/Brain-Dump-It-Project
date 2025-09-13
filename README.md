@@ -12,20 +12,21 @@ Install Supabase
 npm install @supabase/supabase-js
 ```
 
-Install CLI of supabase
+Install CLI of Supabase
 ```zsh
 npm install supabase
 ```
 Install and Run [Docker](https://www.docker.com/) with elevated privileges
 
 Create a [supabase](http://supabase.com/) account and project
-
-Create a `.env.local` file in the project root with your Supabase credentials:
-
 ```zsh
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+# Login to Supabase
+npx supabase login
+
+# Select the project you created in Supabase
+npx supabase link
 ```
+
 And apply all migrations and deploy functions
 
 Supabase CLI:
@@ -38,6 +39,13 @@ npx supabase db push
 
 # deploy functions (adjust function name)
 npx supabase functions deploy get-user-lists
+```
+
+Create a `.env.local` file in the project root with your Supabase credentials:
+
+```zsh
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 ## 3) Install & Run
