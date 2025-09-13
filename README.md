@@ -37,8 +37,8 @@ npx supabase start
 # apply migrations
 npx supabase db push
 
-# deploy functions (adjust function name)
-npx supabase functions deploy get-user-lists
+# deploy all functions
+npx supabase functions deploy
 ```
 
 Create a `.env.local` file in the project root with your Supabase credentials:
