@@ -41,11 +41,11 @@ export const VOCAB = {
     SIGN_UP_TITLE: "Sign up",
     
     // Empty states
-    NO_TASKS_IN_LIST: "No tasks in this list yet",
-    NO_TASKS_IN_ROUTINE: "No tasks in this routine yet",
-    NO_LISTS_FOUND: "No lists found",
+    NO_TASKS_IN_LIST: "Create your first task",
+    NO_TASKS_IN_ROUTINE: "Create your first routine task",
+    NO_LISTS_FOUND: "Create your first list with the Brain Dumpo button",
     NO_TASK_LISTS_FOUND: "No task lists found",
-    NO_ROUTINE_LISTS_FOUND: "No routine lists found",
+    NO_ROUTINE_LISTS_FOUND: "Create your first routine with the Brain Dumpo button",
     UNTITLED_LIST: "Untitled List",
     UNTITLED_ROUTINE: "Untitled Routine",
     
@@ -57,7 +57,7 @@ export const VOCAB = {
     // Generic messages
     ACCOUNT_CREATED_CHECK_EMAIL: "Account created. Check your email to verify",
     ACCOUNT_CREATED_PROFILE_SETUP_FAILED: "Account created but failed to set up profile. Please contact support.",
-    SIGNUP_GENERIC_ERROR: "An error occurred during signup",
+    SIGNUP_GENERIC_ERROR: "An error occurred during signup, please check your emails",
     LOGIN_GENERIC_ERROR: "An error occurred during login",
     PASSWORD_TOO_WEAK: "Password too weak",
     EMAIL_LABEL: "Email",
