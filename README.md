@@ -6,12 +6,27 @@ A React + Supabase app to help manage tasks, routines, groups, and accessibility
 - Node.js 20+
 - Supabase CLI if you want to create migrations or functions
 
-## 2) Environment Setup
+## 2) Seting up Supabase
+Create a supabase account and project http://supabase.com/
+
 Create a `.env.local` file in the project root with your Supabase credentials:
 
 ```zsh
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+And apply all migrations and deploy functions
+
+Supabase CLI:
+```bash
+# Run local stack if you use CLI
+supabase start
+
+# apply migrations
+supabase migration push
+
+# deploy functions (adjust function name)
+supabase functions deploy get-user-lists
 ```
 
 ## 3) Install & Run
@@ -22,17 +37,6 @@ npm run dev
 
 Then open the printed local URL http://localhost:...
 
-Supabase CLI:
-```bash
-# optional: run local stack if you use CLI
-supabase start
-
-# apply migrations
-supabase migration push
-
-# deploy functions (adjust function name)
-supabase functions deploy get-user-lists
-```
 
 ## 4) API Layer (Frontend)
 All frontend API calls are centralized in `src/api/supabaseApi.ts`. Each returns `{ data?, error? }`.
