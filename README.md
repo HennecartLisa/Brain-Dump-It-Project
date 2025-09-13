@@ -34,7 +34,7 @@ Supabase CLI:
 npx supabase start
 
 # apply migrations
-npx supabase migration push
+npx supabase db push
 
 # deploy functions (adjust function name)
 npx supabase functions deploy get-user-lists
