@@ -14,7 +14,7 @@ npm install @supabase/supabase-js
 
 Install CLI of supabase
 ```zsh
-npm install -g supabase
+npm install supabase --save-dev
 ```
 
 Create a supabase account and project http://supabase.com/
