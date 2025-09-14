@@ -171,6 +171,35 @@ export const VOCAB = {
     PRIVACY_CONSENT_CHECKBOX_TEXT_SUFFIX: "and consent to the processing of my personal data in accordance with UK GDPR.",
     PRIVACY_MUST_CONSENT: "You must agree to our privacy policy to continue",
 
+    // Account section
+    MY_ACCOUNT_PROFILE: "My Account - Profile",
+    MY_ACCOUNT_PREFERENCES: "My Account - Preferences",
+    MY_ACCOUNT_SECURITY: "My Account - Security",
+    ACCOUNT_SETTINGS_COMING_SOON: "Account settings and profile management coming soon...",
+    USER_PREFERENCES_COMING_SOON: "User preferences and settings coming soon...",
+    DANGER_ZONE: "Danger Zone",
+    DELETE_ACCOUNT_WARNING: "Once you delete your account, there is no going back. Please be certain.",
+    
+    // Projects section
+    PROJECTS_ACTIVE: "Projects - Active",
+    PROJECTS_PLANNING: "Projects - Planning",
+    PROJECTS_ARCHIVE: "Projects - Archive",
+    ACTIVE_PROJECTS_COMING_SOON: "Active projects coming soon...",
+    PROJECT_PLANNING_COMING_SOON: "Project planning tools coming soon...",
+    COMPLETED_PROJECTS_COMING_SOON: "Completed projects coming soon...",
+    
+    // History section
+    HISTORY_RECENT_ACTIVITY: "History - Recent Activity",
+    HISTORY_STATISTICS: "History - Statistics",
+    HISTORY_ARCHIVE: "History - Archive",
+    RECENT_ACTIVITY_COMING_SOON: "Recent activity history coming soon...",
+    USAGE_STATISTICS_COMING_SOON: "Usage statistics coming soon...",
+    HISTORICAL_DATA_COMING_SOON: "Historical data archive coming soon...",
+    
+    // Village section
+    MY_VILLAGE_GROUP_NOT_FOUND: "My Village group not found",
+    CREATE_MY_VILLAGE_GROUP: "Create My Village Group",
+    
     // Account Deletion
     DELETE_PROFILE_BUTTON: "Delete My Profile",
     DELETE_PROFILE_CONFIRM_TITLE: "Delete Account Confirmation",
