@@ -6,7 +6,41 @@ A React + Supabase app to help manage tasks, routines, groups, and accessibility
 - Node.js 20+
 - Supabase CLI if you want to create migrations or functions
 
-## 2) Environment Setup
+## 2) Seting up Supabase
+Install Supabase
+```zsh
+npm install @supabase/supabase-js
+```
+
+Install CLI of Supabase
+```zsh
+npm install supabase
+```
+Install and Run [Docker](https://www.docker.com/) with elevated privileges
+
+Create a [supabase](http://supabase.com/) account and project
+```zsh
+# Login to Supabase
+npx supabase login
+
+# Select the project you created in Supabase
+npx supabase link
+```
+
+And apply all migrations and deploy functions
+
+Supabase CLI:
+```zsh
+# Run local stack if you use CLI
+npx supabase start
+
+# apply migrations
+npx supabase db push
+
+# deploy all functions
+npx supabase functions deploy
+```
+
 Create a `.env.local` file in the project root with your Supabase credentials:
 
 ```zsh
@@ -22,20 +56,9 @@ npm run dev
 
 Then open the printed local URL http://localhost:...
 
-Supabase CLI:
-```bash
-# optional: run local stack if you use CLI
-supabase start
-
-# apply migrations
-supabase migration push
-
-# deploy functions (adjust function name)
-supabase functions deploy get-user-lists
-```
 
 ## 4) API Layer (Frontend)
-All frontend API calls are centralized in `src/api/supabaseApi.ts`. Each returns `{ data?, error? }`.
+All frontend API calls are centralised in `src/api/supabaseApi.ts`. Each returns `{ data?, error? }`.
 
 ### Lists
 - `getUserLists(): Promise<ApiResponse<List[]>>`
